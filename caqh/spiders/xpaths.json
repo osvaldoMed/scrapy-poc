@@ -1,0 +1,22 @@
+[
+    {
+      "field": "first_name",
+      "xpath": "//div[preceding-sibling::div[./label[contains(@for,'First_Name_')]]]//text()",
+      "regex": "[a-zA-Z]+"
+    },
+    {
+      "field": "middle_name",
+      "xpath": "//div[preceding-sibling::div[./label[contains(@for,'Middle_Name_')]]]//text()",
+      "regex": "[a-zA-Z]+"
+    },
+    {
+      "field": "last_name",
+      "xpath": "//div[preceding-sibling::div[./label[contains(@for,'Last_Name_')]]]//text()",
+      "regex": "[a-zA-Z]+"
+    },
+    {
+      "field": "provider_id",
+      "xpath": "//div/label[contains(@for, 'CAQH_Provider_ID')]//text()",
+      "regex": "(?<=:\\s).*"
+    }
+  ]
